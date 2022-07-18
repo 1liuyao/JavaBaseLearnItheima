@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaBaseLearnItheima.iml" filepath="$PROJECT_DIR$/JavaBaseLearnItheima.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../algorithmstudy/algorithmstudy.iml" filepath="$PROJECT_DIR$/../algorithmstudy/algorithmstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myArray/myArray.iml" filepath="$PROJECT_DIR$/../myArray/myArray.iml" />
     </modules>
   </component>
 </project>
