@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="algorithmstudy:war">
+    <output-path>$PROJECT_DIR$/../algorithmstudy/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>algorithmstudy</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="algorithmstudy-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="algorithmstudy:war exploded" />
+    </root>
+  </artifact>
+</component>
