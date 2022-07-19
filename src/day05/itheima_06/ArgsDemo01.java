@@ -1,14 +1,15 @@
 package day05.itheima_06;
 
 /*
-    å¯¹äºåŸºæœ¬æ•°æ®ç±»å‹çš„å‚æ•°ï¼Œå½¢å¼å‚æ•°çš„æ”¹å˜ï¼Œä¸å½±å“å®é™…å‚æ•°çš„å€¼
+    ¶ÔÓÚ»ù±¾Êı¾İÀàĞÍµÄ²ÎÊı£¬ĞÎÊ½²ÎÊıµÄ¸Ä±ä£¬²»Ó°ÏìÊµ¼Ê²ÎÊıµÄÖµ
+    Ã¿¸ö·½·¨ÔÚÕ»ÄÚ´æÖĞ£¬¶¼»áÓĞ¶ÀÁ¢µÄÕ»¿Õ¼ä£¬·½·¨ÔËĞĞ½áÊøºó¾Í»áµ¯Õ»ÏûÊ§
  */
 public class ArgsDemo01 {
     public static void main(String[] args) {
         int number = 100;
-        System.out.println("è°ƒç”¨changeæ–¹æ³•å‰ï¼š" + number);
+        System.out.println("µ÷ÓÃchange·½·¨Ç°£º" + number);
         change(number);
-        System.out.println("è°ƒç”¨changeæ–¹æ³•åï¼š" + number);
+        System.out.println("µ÷ÓÃchange·½·¨ºó£º" + number);
     }
 
     public static void change(int number) {

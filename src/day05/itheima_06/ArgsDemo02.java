@@ -1,14 +1,16 @@
 package day05.itheima_06;
 
 /*
-    å¯¹äºå¼•ç”¨ç±»å‹çš„å‚æ•°ï¼Œå½¢å¼å‚æ•°çš„æ”¹å˜ï¼Œå½±å“å®é™…å‚æ•°çš„å€¼
+    ¶ÔÓÚÒıÓÃÀàĞÍµÄ²ÎÊı£¬ĞÎÊ½²ÎÊıµÄ¸Ä±ä£¬Ó°ÏìÊµ¼Ê²ÎÊıµÄÖµ
+    ÒıÓÃÊı¾İÀàĞÍµÄ´«²Î£¬´«ÈëµÄÊÇµØÖ·Öµ£¬ÄÚ´æÖĞ»áÔì³ÉÁ½¸öÒıÓÃÖ¸ÏòÍ¬Ò»¸öÄÚ´æµÄĞ§¹û£¬ËùÒÔ¼´Ê¹·½·¨
+µ¯Õ»£¬¶ÑÄÚ´æÖĞµÄÊı¾İÒ²ÒÑ¾­ÊÇ¸Ä±äºóµÄ½á¹û
  */
 public class ArgsDemo02 {
     public static void main(String[] args) {
         int[] arr = {10, 20, 30};
-        System.out.println("è°ƒç”¨changeæ–¹æ³•å‰ï¼š" + arr[1]);
+        System.out.println("µ÷ÓÃchange·½·¨Ç°£º" + arr[1]);
         change(arr);
-        System.out.println("è°ƒç”¨changeæ–¹æ³•åï¼š" + arr[1]);
+        System.out.println("µ÷ÓÃchange·½·¨ºó£º" + arr[1]);
     }
 
     public static void change(int[] arr) {

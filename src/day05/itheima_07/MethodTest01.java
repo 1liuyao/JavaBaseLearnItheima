@@ -27,6 +27,10 @@ public class MethodTest01 {
         //定义一个数组，用静态初始化完成数组元素初始化
         int[] arr = {11, 22, 33, 44, 55};
 
+        //定义空数组
+        int[] a=new int[0];
+        printArray(a);
+
         //调用方法
         printArray(arr);
     }
@@ -48,6 +52,7 @@ public class MethodTest01 {
         System.out.print("[");
         for(int x=0; x<arr.length; x++) {
             if(x == arr.length-1) {
+                //如果时最后一个元素，后面不需要加逗号
                 System.out.print(arr[x]);
             } else {
                 System.out.print(arr[x]+", ");

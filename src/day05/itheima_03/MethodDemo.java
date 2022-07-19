@@ -11,6 +11,8 @@ package day05.itheima_03;
 	调用格式：
         1:方法名(参数);
         2:数据类型 变量名 = 方法名(参数);
+
+    注意：方法的返回值通常会使用变量接收，否则该返回值将无意义
  */
 public class MethodDemo {
     public static void main(String[] args) {

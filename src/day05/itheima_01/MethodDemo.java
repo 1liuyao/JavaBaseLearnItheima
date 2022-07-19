@@ -10,6 +10,10 @@ package day05.itheima_01;
 
 	调用格式：
 	    方法名();
+
+	注意：方法需要先定义，后调用，被调用的方法需要保证先存在
+	总结：每个方法在被调用执行的时候，都会进入栈内存，并且拥有自己独立的内存空间，方法内部代码调用
+完毕之后，会从栈内存中弹栈消失。
  */
 public class MethodDemo {
     public static void main(String[] args) {
