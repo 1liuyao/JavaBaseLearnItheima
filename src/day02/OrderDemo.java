@@ -4,13 +4,13 @@ package day02;
 	Ë³Ğò½á¹¹
 */
 public class OrderDemo {
-	public static void main(String[] args) {
-		System.out.println("¿ªÊ¼");
-		
-		System.out.println("Óï¾äA");
-		System.out.println("Óï¾äB");
-		System.out.println("Óï¾äC");
-		
-		System.out.println("½áÊø");
-	}
+    public static void main(String[] args) {
+        System.out.println("¿ªÊ¼");
+
+        System.out.println("Óï¾äA");
+        System.out.println("Óï¾äB");
+        System.out.println("Óï¾äC");
+
+        System.out.println("½áÊø");
+    }
 }

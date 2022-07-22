@@ -1,4 +1,5 @@
 package day04.itheima_05;
+
 /*
     获取最值
         获取数组中的最大值
@@ -14,8 +15,8 @@ public class ArrayTest02 {
         int max = arr[0];
 
         //与数组中剩余的数据逐个比对，每次比对将最大值保存到变量中
-        for(int x=1; x<arr.length; x++) {
-            if(arr[x] > max) {
+        for (int x = 1; x < arr.length; x++) {
+            if (arr[x] > max) {
                 max = arr[x];
             }
         }

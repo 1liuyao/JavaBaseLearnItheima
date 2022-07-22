@@ -59,9 +59,9 @@ public class Test08 {
         int index = -1;
 
         //遍历数组，获取到数组中的每一个元素
-        for(int x=0; x<arr.length; x++) {
+        for (int x = 0; x < arr.length; x++) {
             //拿键盘录入的数据和数组中的每一个元素进行比较，如果值相同，就把该值对应的索引赋值给索引变量,并结束循环
-            if(arr[x] == number) {
+            if (arr[x] == number) {
                 index = x;
                 break;
             }

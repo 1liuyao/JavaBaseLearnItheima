@@ -18,7 +18,7 @@ public class StringBuilderDemo01 {
         System.out.println("sb2.length():" + sb2.length());
 
         String s = new String();
-        String s1="";
+        String s1 = "";
         StringBuilder s2 = new StringBuilder();
 
         System.out.println(s.equals(s1));//空串内容比较,返回true
@@ -27,6 +27,6 @@ public class StringBuilderDemo01 {
         //比较StringBuilder与String可以将StringBuilder通过.toString()
         //方法转换为String后进行，String中的equals方法是执行逐字符比较后返回结果。
         System.out.println(s.equals(s2.toString()));//true
-        System.out.println(s==s1);
+        System.out.println(s == s1);
     }
 }

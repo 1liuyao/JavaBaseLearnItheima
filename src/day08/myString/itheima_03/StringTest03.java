@@ -31,15 +31,15 @@ public class StringTest03 {
         int numberCount = 0;
 
         //遍历字符串，得到每一个字符
-        for(int i=0; i<line.length(); i++) {
+        for (int i = 0; i < line.length(); i++) {
             char ch = line.charAt(i);
 
             //判断该字符属于哪种类型，然后对应类型的统计变量+1
-            if(ch>='A' && ch<='Z') {
+            if (ch >= 'A' && ch <= 'Z') {
                 bigCount++;
-            } else if(ch>='a' && ch<='z') {
+            } else if (ch >= 'a' && ch <= 'z') {
                 smallCount++;
-            } else if(ch>='0' && ch<='9') {
+            } else if (ch >= '0' && ch <= '9') {
                 numberCount++;
             }
         }

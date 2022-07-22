@@ -43,6 +43,6 @@ public class StringBuilderTest02 {
 //        String ss = sb.toString();
 //        return ss;
 
-       return new StringBuilder(s).reverse().toString();
+        return new StringBuilder(s).reverse().toString();
     }
 }

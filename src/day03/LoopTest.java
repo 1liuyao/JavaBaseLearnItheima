@@ -58,8 +58,8 @@ public class LoopTest {
 		System.out.println(j);//j在循环外声明，循环结束后仍有效
 		System.out.println("--------");
 		*/
-		
-		//死循环
+
+        //死循环
 		/*
 		for(;;) {
 			System.out.println("for");
@@ -71,11 +71,11 @@ public class LoopTest {
 			System.out.println("while");
 		}
 		*/
-		
-		do {
-			System.out.println("do...while");
-		}while(true);
-		
-		
+
+        do {
+            System.out.println("do...while");
+        } while (true);
+
+
     }
 }

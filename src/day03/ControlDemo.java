@@ -10,14 +10,14 @@ package day03;
 
 */
 public class ControlDemo {
-	public static void main(String[] args) {
-		for(int i = 1; i<=5; i++) {
-			if(i%2 == 0) {
-				//continue;//输出 1 3 5
-				break;//输出 1
-			}
-			
-			System.out.println(i);
-		}
-	}
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            if (i % 2 == 0) {
+                //continue;//输出 1 3 5
+                break;//输出 1
+            }
+
+            System.out.println(i);
+        }
+    }
 }

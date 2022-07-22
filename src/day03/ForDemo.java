@@ -25,17 +25,17 @@ package day03;
 public class ForDemo {
     public static void main(String[] args) {
         //需求：在控制台输出5次"HelloWorld"
-		System.out.println("HelloWorld");
-		System.out.println("HelloWorld");
-		System.out.println("HelloWorld");
-		System.out.println("HelloWorld");
-		System.out.println("HelloWorld");
-		System.out.println("--------");
-		
-		//用循环改进
-		for(int i=1; i<=5; i++) {
-			System.out.println("HelloWorld");
-		}
-		
+        System.out.println("HelloWorld");
+        System.out.println("HelloWorld");
+        System.out.println("HelloWorld");
+        System.out.println("HelloWorld");
+        System.out.println("HelloWorld");
+        System.out.println("--------");
+
+        //用循环改进
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("HelloWorld");
+        }
+
     }
 }

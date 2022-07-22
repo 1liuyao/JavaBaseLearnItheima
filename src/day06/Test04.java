@@ -26,8 +26,8 @@ public class Test04 {
 
 
         //用循环实现计算每个月的兔子对数
-        for(int x=2; x<arr.length; x++) {
-            arr[x] = arr[x-2] + arr[x-1];
+        for (int x = 2; x < arr.length; x++) {
+            arr[x] = arr[x - 2] + arr[x - 1];
             /*
                 arr[2] = arr[0] + arr[1];
                 arr[3] = arr[1] + arr[2];

@@ -20,14 +20,14 @@ package day07.itheima_04;
 public class Student {
     //成员变量
     String name;
-//    int age;
+    //    int age;
     private int age;//如果不使用private修饰，调用者可以传入任意年龄
 
     //提供get/set方法
     public void setAge(int a) {
 //        age = a;
 
-        if(a<0 || a>120) {
+        if (a < 0 || a > 120) {
             System.out.println("你给的年龄有误");
         } else {
             age = a;

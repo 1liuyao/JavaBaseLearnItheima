@@ -28,7 +28,7 @@ public class ArrayListDemo01 {
         array.add("java");
 
         //public void add(int index,E element)：在此集合中的指定位置插入指定的元素
-        array.add(1,"javase");
+        array.add(1, "javase");
 //        array.add(3,"javaee");
 
         //IndexOutOfBoundsException超出索引范围报错

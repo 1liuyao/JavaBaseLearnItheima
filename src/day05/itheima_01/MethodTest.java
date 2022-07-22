@@ -23,7 +23,7 @@ public class MethodTest {
         int b = 20;
 
         //使用分支语句分两种情况对两个数字的大小关系进行处理
-        if(a > b) {
+        if (a > b) {
             System.out.println(a);
         } else {
             System.out.println(b);

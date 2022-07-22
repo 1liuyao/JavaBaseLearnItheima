@@ -39,8 +39,8 @@ public class StringTest04 {
 
         s += "[";
 
-        for(int i=0; i<arr.length; i++) {
-            if(i==arr.length-1) {
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1) {
                 s += arr[i];
             } else {
                 s += arr[i];

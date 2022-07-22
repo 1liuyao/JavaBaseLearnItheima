@@ -28,7 +28,7 @@ public class MethodTest01 {
         int[] arr = {11, 22, 33, 44, 55};
 
         //定义空数组
-        int[] a=new int[0];
+        int[] a = new int[0];
         printArray(a);
 
         //调用方法
@@ -50,12 +50,12 @@ public class MethodTest01 {
     */
     public static void printArray(int[] arr) {
         System.out.print("[");
-        for(int x=0; x<arr.length; x++) {
-            if(x == arr.length-1) {
+        for (int x = 0; x < arr.length; x++) {
+            if (x == arr.length - 1) {
                 //如果时最后一个元素，后面不需要加逗号
                 System.out.print(arr[x]);
             } else {
-                System.out.print(arr[x]+", ");
+                System.out.print(arr[x] + ", ");
             }
         }
         System.out.println("]");

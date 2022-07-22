@@ -124,9 +124,9 @@ public class StudentManager {
         //如果与集合中的某一个学生学号相同，返回true;如果都不相同，返回false
         boolean flag = false;
 
-        for(int i=0; i<array.size(); i++) {
+        for (int i = 0; i < array.size(); i++) {
             Student s = array.get(i);
-            if(s.getSid().equals(sid)) {
+            if (s.getSid().equals(sid)) {
                 flag = true;
                 break;
             }

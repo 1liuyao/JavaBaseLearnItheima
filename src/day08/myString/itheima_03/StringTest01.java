@@ -19,7 +19,7 @@ public class StringTest01 {
         String password = "czbk";
 
         //用循环实现多次机会，这里的次数明确，采用for循环实现，并在登录成功的时候，使用break结束循环
-        for(int i=0; i<3; i++) {
+        for (int i = 0; i < 3; i++) {
 
             //键盘录入要登录的用户名和密码，用 Scanner 实现
             Scanner sc = new Scanner(System.in);
@@ -35,7 +35,7 @@ public class StringTest01 {
                 System.out.println("登录成功");
                 break;
             } else {
-                if(2-i == 0) {
+                if (2 - i == 0) {
                     System.out.println("你的账户被锁定，请与管理员联系");
                 } else {
                     //2,1,0

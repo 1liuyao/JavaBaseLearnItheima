@@ -13,13 +13,13 @@ package day05.itheima_05;
 public class MethodDemo {
     public static void main(String[] args) {
         //调用方法
-        int result = sum(10,20);
+        int result = sum(10, 20);
         System.out.println(result);
 
-        double result2 = sum(10.0,20.0);
+        double result2 = sum(10.0, 20.0);
         System.out.println(result2);
 
-        int result3 = sum(10,20,30);
+        int result3 = sum(10, 20, 30);
         System.out.println(result3);
     }
 

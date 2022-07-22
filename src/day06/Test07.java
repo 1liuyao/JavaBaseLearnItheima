@@ -23,7 +23,7 @@ public class Test07 {
 
 
         //调用方法，用变量接收
-        boolean flag = compare(arr,arr2);
+        boolean flag = compare(arr, arr2);
         //输出结果
         System.out.println(flag);
     }
@@ -36,13 +36,13 @@ public class Test07 {
      */
     public static boolean compare(int[] arr, int[] arr2) {
         //首先比较数组长度，如果长度不相同，数组内容肯定不相同，返回false
-        if(arr.length != arr2.length) {
+        if (arr.length != arr2.length) {
             return false;
         }
 
         //其次遍历，比较两个数组中的每一个元素，只要有元素不相同，返回false
-        for(int x=0; x<arr.length; x++) {
-            if(arr[x] != arr2[x]) {
+        for (int x = 0; x < arr.length; x++) {
+            if (arr[x] != arr2[x]) {
                 return false;
             }
         }

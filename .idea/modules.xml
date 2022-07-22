@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaBaseLearnItheima.iml" filepath="$PROJECT_DIR$/JavaBaseLearnItheima.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../myArray/myArray.iml" filepath="$PROJECT_DIR$/../myArray/myArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10/myExtends/myExtends.iml" filepath="$PROJECT_DIR$/day10/myExtends/myExtends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10/myFinal/myFinal.iml" filepath="$PROJECT_DIR$/day10/myFinal/myFinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10/myImport/myImport.iml" filepath="$PROJECT_DIR$/day10/myImport/myImport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10/myModifier/myModifier.iml" filepath="$PROJECT_DIR$/day10/myModifier/myModifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10/myStatic/myStatic.iml" filepath="$PROJECT_DIR$/day10/myStatic/myStatic.iml" />
     </modules>
   </component>
 </project>

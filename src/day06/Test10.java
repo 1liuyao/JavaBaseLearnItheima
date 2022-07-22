@@ -32,7 +32,7 @@ public class Test10 {
 //        arr[1] = sc.nextInt();
 
         //由于是6个评委打分，所以，接收评委分数的操作，用循环改进
-        for(int x=0; x<arr.length; x++) {
+        for (int x = 0; x < arr.length; x++) {
             System.out.println("请输入第" + (x + 1) + "个评委的打分：");
             arr[x] = sc.nextInt();
         }
@@ -64,7 +64,7 @@ public class Test10 {
     public static int getSum(int[] arr) {
         int sum = 0;
 
-        for(int x=0; x<arr.length; x++) {
+        for (int x = 0; x < arr.length; x++) {
             sum += arr[x];
         }
 
@@ -79,8 +79,8 @@ public class Test10 {
     public static int getMin(int[] arr) {
         int min = arr[0];
 
-        for(int x=1; x<arr.length; x++) {
-            if(arr[x] < min) {
+        for (int x = 1; x < arr.length; x++) {
+            if (arr[x] < min) {
                 min = arr[x];
             }
         }
@@ -96,8 +96,8 @@ public class Test10 {
     public static int getMax(int[] arr) {
         int max = arr[0];
 
-        for(int x=1; x<arr.length; x++) {
-            if(arr[x] > max) {
+        for (int x = 1; x < arr.length; x++) {
+            if (arr[x] > max) {
                 max = arr[x];
             }
         }

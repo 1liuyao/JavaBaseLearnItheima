@@ -13,7 +13,7 @@ package day03;
 			小时：0 <= hour < 24
 */
 public class ForForDemo {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*
 		System.out.println("0时0分");
 		System.out.println("0时1分");
@@ -30,8 +30,8 @@ public class ForForDemo {
 		System.out.println("2时2分");
 		System.out.println("2时3分");
 		*/
-		
-		//循环改进
+
+        //循环改进
 		/*
 		for(int minute=0; minute<4; minute++) {
 			System.out.println("0时" + minute + "分");
@@ -48,8 +48,8 @@ public class ForForDemo {
 		}
 		System.out.println("--------");
 		*/
-		
-		//外循环控制小时的范围，内循环控制分钟的范围
+
+        //外循环控制小时的范围，内循环控制分钟的范围
 		/*
 		for(int hour=0; hour<3; hour++) {
 			for(int minute=0; minute<4; minute++) {
@@ -58,12 +58,12 @@ public class ForForDemo {
 			System.out.println("--------");
 		}
 		*/
-		
-		for(int hour=0; hour<24; hour++) {
-			for(int minute=0; minute<60; minute++) {
-				System.out.println(hour + "时" + minute + "分");
-			}
-			System.out.println("--------");
-		}
-	}
+
+        for (int hour = 0; hour < 24; hour++) {
+            for (int minute = 0; minute < 60; minute++) {
+                System.out.println(hour + "时" + minute + "分");
+            }
+            System.out.println("--------");
+        }
+    }
 }

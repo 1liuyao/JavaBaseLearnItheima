@@ -19,14 +19,13 @@ public class Student {
     private int age;
 
 
-
 //    public void setName(String n) {
 //        name = n; //由于形参局部变量n和name不重名，所以，name指的是成员变量
 //    }
 
     public void setName(String name) {
 //        name = name;//由于形参局部变量name和成员变量重名，如果不加this会认为那么是
-                    //函数内的成员变量，函数调用执行完成就在栈内存消失，因此就赋值失败
+        //函数内的成员变量，函数调用执行完成就在栈内存消失，因此就赋值失败
         this.name = name;
     }
 
@@ -51,7 +50,7 @@ public class Student {
     }
 
     //this调用一般成员方法
-    public void show1(){
+    public void show1() {
         this.show();
         //show(); //调用一般成员方法时，this可以省略，本类中函数互相调用其实隐藏了this
     }
@@ -60,8 +59,8 @@ public class Student {
     public Student() {
         System.out.println("1. public Person()");
     }
-    public Student(String name, int age)
-    {
+
+    public Student(String name, int age) {
         // 调用本类中无参构造方法
         this();//必须定义在构造函数第一行
         this.name = name;

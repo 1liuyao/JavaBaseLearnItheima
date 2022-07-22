@@ -36,7 +36,7 @@ public class StringTest02 {
         //遍历字符串，其次要能够获取到字符串的长度
 //        System.out.println(line.length());
 
-        for(int i=0; i<line.length(); i++) {
+        for (int i = 0; i < line.length(); i++) {
             System.out.println(line.charAt(i));
         }
 

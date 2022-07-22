@@ -36,7 +36,7 @@ public class ArrayListTest01 {
 //        System.out.println(array.size());
 
         //遍历集合的通用格式
-        for(int i=0; i<array.size(); i++) {
+        for (int i = 0; i < array.size(); i++) {
             String s = array.get(i);
             System.out.println(s);
         }

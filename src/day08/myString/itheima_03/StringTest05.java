@@ -39,7 +39,7 @@ public class StringTest05 {
         //在方法中把字符串倒着遍历，然后把每一个得到的字符拼接成一个字符串并返回
         String ss = "";
 
-        for(int i=s.length()-1; i>=0; i--) {
+        for (int i = s.length() - 1; i >= 0; i--) {
             ss += s.charAt(i);
         }
 

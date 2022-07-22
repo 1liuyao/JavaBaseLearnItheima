@@ -1,4 +1,5 @@
 package day09.itheima_02;
+
 /*
     学生类
  */
@@ -6,9 +7,10 @@ public class Student {
     private String name;
     private int age;
 
-    public Student() {}
+    public Student() {
+    }
 
-    public Student(String name,int age) {
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }

@@ -27,19 +27,19 @@ package day03;
 public class DoWhileDemo {
     public static void main(String[] args) {
         //需求：在控制台输出5次"HelloWorld"
-		//for循环实现
-		for(int i=1; i<=5; i++) {
-			System.out.println("HelloWorld");
-		}
-		System.out.println("--------");
+        //for循环实现
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("HelloWorld");
+        }
+        System.out.println("--------");
 
-		//do...while循环实现
-		//不能放在循环内声明，若放在do内，遇到}会释放j内存，导致while中j失效无法判断
-		int j = 1;
-		do {
-			System.out.println("HelloWorld");
-			j++;
-		}while(j<=5);
+        //do...while循环实现
+        //不能放在循环内声明，若放在do内，遇到}会释放j内存，导致while中j失效无法判断
+        int j = 1;
+        do {
+            System.out.println("HelloWorld");
+            j++;
+        } while (j <= 5);
 
     }
 }

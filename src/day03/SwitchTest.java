@@ -13,15 +13,15 @@ package day03;/*
 import java.util.Scanner;
 
 public class SwitchTest {
-	public static void main(String[] args) {
-		//键盘录入月份数据，使用变量接收
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("请输入一个月份：");
-		int month = sc.nextInt();
-		
-		//多情况判断，这里采用switch语句实现
-		//在每种情况中，完成输出对应的季节
+    public static void main(String[] args) {
+        //键盘录入月份数据，使用变量接收
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("请输入一个月份：");
+        int month = sc.nextInt();
+
+        //多情况判断，这里采用switch语句实现
+        //在每种情况中，完成输出对应的季节
 		/*
 		switch(month) {
 			case 1:
@@ -70,29 +70,29 @@ public class SwitchTest {
 		  一旦匹配case后，未遇到break，程序会继续顺序执行，但是会忽略在此之后的
 		  所有case条件判断，直接执行语句块，直到遇到break，或者右大括号
 		 */
-		switch(month) {
-			case 1:
-			case 2:
-			case 12:
-				System.out.println("冬季");
-				break;
-			case 3:
-			case 4:
-			case 5:
-				System.out.println("春季");
-				break;
-			case 6:
-			case 7:
-			case 8:
-				System.out.println("夏季");
-				break;
-			case 9:
-			case 10:
-			case 11:
-				System.out.println("秋季");
-				break;
-			default:
-				System.out.println("你输入的月份有误");
-		}		
-	}
+        switch (month) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("冬季");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("春季");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("夏季");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("秋季");
+                break;
+            default:
+                System.out.println("你输入的月份有误");
+        }
+    }
 }

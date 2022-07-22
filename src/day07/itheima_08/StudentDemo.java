@@ -18,7 +18,7 @@ public class StudentDemo {
         s3.show();
 
         //public Student(String name,int age)
-        Student s4 = new Student("林青霞",30);
+        Student s4 = new Student("林青霞", 30);
         s4.show();
     }
 }
