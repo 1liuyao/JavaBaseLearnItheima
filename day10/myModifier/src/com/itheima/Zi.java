@@ -2,6 +2,9 @@ package com.itheima;
 
 import cn.itcast.Fu;
 
+/*
+    在【不同包】下的子类，只能访问【protected】【public】
+ */
 public class Zi extends Fu {
 
     public static void main(String[] args) {

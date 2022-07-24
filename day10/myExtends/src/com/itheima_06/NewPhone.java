@@ -1,22 +1,22 @@
 package com.itheima_06;
 
 /*
-    æ–°æ‰‹æœº
+    ĞÂÊÖ»ú
  */
 public class NewPhone extends Phone {
 
     /*
     public void call(String name) {
-        System.out.println("å¼€å¯è§†é¢‘åŠŸèƒ½");
-//        System.out.println("ç»™" + name + "æ‰“ç”µè¯");
+        System.out.println("¿ªÆôÊÓÆµ¹¦ÄÜ");
+//        System.out.println("¸ø" + name + "´òµç»°");
         super.call(name);
     }
     */
 
-    @Override
+    @Override //°ïÖú¼ì²â·½·¨ÖØĞ´µÄ¸ñÊ½ÊÇ·ñÕıÈ·
     public void call(String name) {
-        System.out.println("å¼€å¯è§†é¢‘åŠŸèƒ½");
-//        System.out.println("ç»™" + name + "æ‰“ç”µè¯");
+        System.out.println("¿ªÆôÊÓÆµ¹¦ÄÜ");
+//        System.out.println("¸ø" + name + "´òµç»°");
         super.call(name);
     }
 

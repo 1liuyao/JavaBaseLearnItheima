@@ -1,10 +1,10 @@
 package com.itheima_06;
 
 /*
-    æ‰‹æœºç±»
+    ÊÖ»úÀà
  */
 public class Phone {
     public void call(String name) {
-        System.out.println("ç»™" + name + "æ‰“ç”µè¯");
+        System.out.println("¸ø" + name + "´òµç»°");
     }
 }

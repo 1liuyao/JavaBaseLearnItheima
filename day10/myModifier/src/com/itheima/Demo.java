@@ -2,6 +2,9 @@ package com.itheima;
 
 import cn.itcast.Fu;
 
+/*
+    在【不同包】下的【无关类】，只能访问【public】
+ */
 public class Demo {
 
     public static void main(String[] args) {

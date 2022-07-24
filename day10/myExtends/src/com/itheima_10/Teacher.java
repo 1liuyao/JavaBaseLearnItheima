@@ -6,8 +6,8 @@ public class Teacher extends Person {
     }
 
     public Teacher(String name, int age) {
-//        this.name = name;
-//        this.age = age;
+//        this.name = name; //报错
+//        this.age = age;//子类不能直接访问父类的私有成员，同时，子类没有声明自己的成员属性
         super(name, age);
     }
 

@@ -1,16 +1,16 @@
 package com.itheima_06;
 
 /*
-    æµ‹è¯•ç±»
+    ²âÊÔÀà
  */
 public class PhoneDemo {
     public static void main(String[] args) {
-        //åˆ›å»ºå¯¹è±¡ï¼Œè°ƒç”¨æ–¹æ³•
+        //´´½¨¶ÔÏó£¬µ÷ÓÃ·½·¨
         Phone p = new Phone();
-        p.call("æ—é’éœ");
+        p.call("ÁÖÇàÏ¼");
         System.out.println("--------");
 
         NewPhone np = new NewPhone();
-        np.call("æ—é’éœ");
+        np.call("ÁÖÇàÏ¼");
     }
 }

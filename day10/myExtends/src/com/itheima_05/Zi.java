@@ -3,11 +3,11 @@ package com.itheima_05;
 public class Zi extends Fu {
 
     public void method() {
-        System.out.println("Ziä¸­method()æ–¹æ³•è¢«è°ƒç”¨");
+        System.out.println("ZiÖÐmethod()·½·¨±»µ÷ÓÃ");
     }
 
     public void show() {
-        super.show();
-        System.out.println("Ziä¸­show()æ–¹æ³•è¢«è°ƒç”¨");
+        super.show();//·ÃÎÊ¸¸ÀàµÄ³ÉÔ±·½·¨
+        System.out.println("ZiÖÐshow()·½·¨±»µ÷ÓÃ");
     }
 }

@@ -1,5 +1,8 @@
 package cn.itcast;
 
+/*
+    在【本类】中，四种权限均可访问
+ */
 public class Fu {
     private void show1() {
         System.out.println("private");

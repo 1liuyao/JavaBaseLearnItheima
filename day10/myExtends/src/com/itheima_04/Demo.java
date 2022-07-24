@@ -1,13 +1,41 @@
 package com.itheima_04;
 
 /*
-    æµ‹è¯•ç±»
+    ²âÊÔÀà
+
+    ×¢Òâ£º×ÓÀàÖÐËùÓÐµÄ¹¹Ôì·½·¨Ä¬ÈÏ¶¼»á·ÃÎÊ¸¸ÀàÖÐÎÞ²ÎµÄ¹¹Ôì·½·¨
+
+    ×ÓÀà»á¼Ì³Ð¸¸ÀàÖÐµÄÊý¾Ý£¬¿ÉÄÜ»¹»áÊ¹ÓÃ¸¸ÀàµÄÊý¾Ý¡£ËùÒÔ£¬×ÓÀà³õÊ¼»¯Ö®Ç°£¬
+    Ò»¶¨ÒªÏÈÍê³É¸¸ÀàÊý¾ÝµÄ³õÊ¼»¯¡£Ô­ÒòÔÚÓÚ£¬Ã¿Ò»¸ö×ÓÀà¹¹Ôì·½·¨µÄµÚÒ»ÌõÓï¾äÄ¬ÈÏ¶¼ÊÇ£º
+    super()
+
+    ÎÊÌâ£ºÈç¹û¸¸ÀàÖÐÃ»ÓÐÎÞ²Î¹¹Ôì·½·¨£¬Ö»ÓÐ´ø²Î¹¹Ôì·½·¨£¬¸ÃÔõÃ´°ìÄØ£¿
+    1. Í¨¹ýÊ¹ÓÃsuper¹Ø¼ü×ÖÈ¥ÏÔÊ¾µÄµ÷ÓÃ¸¸ÀàµÄ´ø²Î¹¹Ôì·½·¨
+    2. ÔÚ¸¸ÀàÖÐ×Ô¼ºÌá¹©Ò»¸öÎÞ²Î¹¹Ôì·½·¨¡¾ÍÆ¼ö¡¿
+
+    ÍÆ¼ö·½°¸£º
+    ×Ô¼º¸ø³öÎÞ²Î¹¹Ôì·½·¨
+
+    Èç¹û×ÓÀà¹¹Ôìº¯ÊýÖÐÓÃthisÀ´Ö¸¶¨µ÷ÓÃ×ÓÀà×Ô¼ºµÄ¹¹Ôìº¯Êý£¬ÄÇÃ´±»µ÷ÓÃµÄ¹¹Ôìº¯ÊýÒ»Ñù»á·ÃÎÊ¸¸ÀàÖÐµÄ¹¹Ôìº¯Êý
+
+    ÎÊÌâ£ºsuper()ºÍthis()Óï¾äÎªÊ²Ã´¶¼Òª¶¨ÒåÔÚµÚÒ»ÐÐ£¿
+    ´ð£ºÒòÎª¶þÕß¶¼ÊÇµ÷ÓÃ¹¹Ôìº¯ÊýÓÃÓÚ³õÊ¼»¯¶ÔÏó£¬¶ø³õÊ¼»¯¶¯×÷ÒªÏÈÍê³É
+
+    ÎÊÌâ£ºsuper()ºÍthis()Óï¾ä¿ÉÒÔ³öÏÖÔÚÍ¬Ò»¸ö¹¹Ôìº¯ÊýÖÐÂð£¿
+    ´ð£º²»¿ÉÒÔ£¬Á½¸öÓï¾ä¶¼Òª¶¨ÒåÔÚµÚÒ»ÐÐ£¬ËùÒÔÖ»ÄÜ³öÏÖÒ»¸ö¡£
 */
 public class Demo {
     public static void main(String[] args) {
-        //åˆ›å»ºå¯¹è±¡
+        //ÎÊÌâ£ºÎªÊ²Ã´´´½¨×ÓÀà¶ÔÏó¶¼»á·ÃÎÊ¸¸ÀàµÄÎÞ²Î¹¹Ôì·½·¨£¿
+        //´´½¨¶ÔÏó
         Zi z = new Zi();
+        //Êä³ö
+        //      FuÖÐÎÞ²Î¹¹Ôì·½·¨±»µ÷ÓÃ
+        //      ZiÖÐÎÞ²Î¹¹Ôì·½·¨±»µ÷ÓÃ
 
         Zi z2 = new Zi(20);
+        //Êä³ö
+        //        FuÖÐÎÞ²Î¹¹Ôì·½·¨±»µ÷ÓÃ
+        //        ZiÖÐ´ø²Î¹¹Ôì·½·¨±»µ÷ÓÃ
     }
 }

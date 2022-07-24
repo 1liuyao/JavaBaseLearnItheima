@@ -1,7 +1,7 @@
 package com.itheima_01;
 
 /*
-    æµ‹è¯•ç±»
+    ²âÊÔÀà
  */
 public class Demo {
     public static void main(String[] args) {
