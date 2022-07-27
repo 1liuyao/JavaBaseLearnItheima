@@ -27,6 +27,10 @@ import java.util.Scanner;
     （1）如果函数内部throw 编译时异常对象【Exception的子类】，则在函数声明上必须throw异常类名
     （2）如果函数内部throw 运行时异常对象【RuntimeException的子类】，则函数声明上无需throw，同时调用该函数时可以既不try也不throws
         之所以不在函数上throws声明，是因为不想让调用者处理，当异常发生时，程序在运行时出现了无法继续运算的情况，希望停止程序后，对代码进行修正。
+    （3）throw下面不要写语句，因为执行不到。
+
+    问题：哪些关键字下面不要编写语句？
+    回答：return break continue throw
 
  */
 public class Demo {
