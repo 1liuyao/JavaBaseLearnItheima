@@ -1,6 +1,7 @@
 package com.itheima_02;
 
 /*
+    Throwable的成员方法：
     public String getMessage():返回此 throwable 的详细消息字符串
     public String toString():返回此可抛出的简短描述
     public void printStackTrace():把异常的错误信息输出在控制台
@@ -16,7 +17,7 @@ public class ExceptionDemo02 {
         try {
             int[] arr = {1, 2, 3};
             System.out.println(arr[3]); //new ArrayIndexOutOfBoundsException();
-            System.out.println("这里能够访问到吗");
+            System.out.println("这里能够访问到吗");//访问不到，已经产生了异常
         } catch (ArrayIndexOutOfBoundsException e) { //new ArrayIndexOutOfBoundsException();
 //            e.printStackTrace();
 
@@ -50,5 +51,12 @@ public class ExceptionDemo02 {
         public String getMessage() {
             return detailMessage;
         }
+    }
+ */
+
+/*
+   public ArrayIndexOutOfBoundsException(int index) {
+        //追踪到Trowable的带参构造，所以想更改对异常信息的描述，可以参考以下写法
+        super("Array index out of range: " + index);
     }
  */

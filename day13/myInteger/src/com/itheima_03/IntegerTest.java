@@ -12,7 +12,7 @@ import java.util.Arrays;
             得到字符串中每一个数字数据？
                 public String[] split(String regex)
             定义一个int数组，把 String[] 数组中的每一个元素存储到 int 数组中
-                public static int parseInt​(String s)
+                public static int parseInt(String s)
         3:对 int 数组进行排序
         4:把排序后的int数组中的元素进行拼接得到一个字符串，这里拼接采用StringBuilder来实现
         5:输出结果

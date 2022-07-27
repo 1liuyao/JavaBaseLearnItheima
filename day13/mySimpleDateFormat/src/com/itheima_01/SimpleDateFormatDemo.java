@@ -5,29 +5,31 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
-    æ„é€ æ–¹æ³•ï¼š
-        public SimpleDateFormatâ€‹():æ„é€ ä¸€ä¸ªSimpleDateFormatï¼Œä½¿ç”¨é»˜è®¤æ¨¡å¼å’Œæ—¥æœŸæ ¼å¼
-        public SimpleDateFormatâ€‹(String pattern):æ„é€ ä¸€ä¸ªSimpleDateFormatä½¿ç”¨ç»™å®šçš„æ¨¡å¼å’Œé»˜è®¤çš„æ—¥æœŸæ ¼å¼
+    SimpleDateFormatÀàÊÇ¡¾abstract¡¿DateFormatÀàµÄÒ»¸ö¾ßÌå×ÓÀà£¬ÓÃÓÚ¸ñÊ½»¯ÈÕÆÚ»òÊ±¼ä¡£
 
-    æ ¼å¼åŒ–ï¼šä» Date åˆ° String
-        public final String format(Date date)ï¼šå°†æ—¥æœŸæ ¼å¼åŒ–æˆæ—¥æœŸ/æ—¶é—´å­—ç¬¦ä¸²
+    ¹¹Ôì·½·¨£º
+        public SimpleDateFormat():¹¹ÔìÒ»¸öSimpleDateFormat£¬Ê¹ÓÃÄ¬ÈÏÄ£Ê½ºÍÈÕÆÚ¸ñÊ½
+        public SimpleDateFormatString pattern):¹¹ÔìÒ»¸öSimpleDateFormatÊ¹ÓÃ¸ø¶¨µÄÄ£Ê½ºÍÄ¬ÈÏµÄÈÕÆÚ¸ñÊ½
 
-    è§£æï¼šä» String åˆ° Date
-        public Date parseâ€‹(String source)ï¼šä»ç»™å®šå­—ç¬¦ä¸²çš„å¼€å§‹è§£ææ–‡æœ¬ä»¥ç”Ÿæˆæ—¥æœŸ
+    ¸ñÊ½»¯£º´Ó Date µ½ String
+        public final String format(Date date)£º½«ÈÕÆÚ¸ñÊ½»¯³ÉÈÕÆÚ/Ê±¼ä×Ö·û´®
+
+    ½âÎö£º´Ó String µ½ Date
+        public Date parse(String source)£º´Ó¸ø¶¨×Ö·û´®µÄ¿ªÊ¼½âÎöÎÄ±¾ÒÔÉú³ÉÈÕÆÚ
  */
 public class SimpleDateFormatDemo {
     public static void main(String[] args) throws ParseException {
-        //æ ¼å¼åŒ–ï¼šä» Date åˆ° String
+        //¸ñÊ½»¯£º´Ó Date µ½ String
         Date d = new Date();
-//        SimpleDateFormat sdf = new SimpleDateFormat();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
+  //      SimpleDateFormat sdf = new SimpleDateFormat();//22-7-26 ÏÂÎç3:01
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
         String s = sdf.format(d);
         System.out.println(s);
         System.out.println("--------");
 
-        //ä» String åˆ° Date
+        //´Ó String µ½ Date£¬patternµÃºÍString¶ÔÉÏ
         String ss = "2048-08-09 11:11:11";
-        //ParseException
+        //ParseException ALT+EnterÑ¡Ôñ½â¾ö·½·¨
         SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date dd = sdf2.parse(ss);
         System.out.println(dd);

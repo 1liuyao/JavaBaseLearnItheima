@@ -23,17 +23,17 @@ public class Convert {
        3、基本数据类型转成String
        （1）方式一：String.valueOf(基本数据类型)
        （2）方式二：包装类.toString()【实际上方式一只是封装了方式二】
+       （3）方式三：基本数据类型+空串，例如:s=10+"";
 
        4、String转成基本数据类型
        （1）byte short int long float double采用：包装类.parse包装类名（字符串）
         例如：Short.parseShort(String)将字符串转化成short类型
        （2）char：new String().charAt(int index) 返回指定位置字符
-       （3）另外一种方式：基本数据类型+空串，例如:s=10+"";
-       （4）char[]转成String：直接使用String构造方法String(char[] value)
-       （5）String转成char[]：new String().toCharArray()
+       （3）char[]转成String：直接使用String构造方法String(char[] value)
+       （4）String转成char[]：new String().toCharArray()
                             String.valueOf()
-       （6）byte[]转成String：直接使用String构造方法String(byte[] bytes)
-       （7）String转成byte[]：new String().getBytes();
+       （5）byte[]转成String：直接使用String构造方法String(byte[] bytes)
+       （6）String转成byte[]：new String().getBytes();
 
        5、包装类转成String：包装类对象.toString()
        6、String转成包装类

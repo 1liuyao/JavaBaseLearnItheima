@@ -3,24 +3,32 @@ package com.itheima_01;
 import java.util.Calendar;
 
 /*
-    Calendar ä¸ºç‰¹å®šç¬é—´ä¸ä¸€ç»„æ—¥å†å­—æ®µä¹‹é—´çš„è½¬æ¢æä¾›äº†ä¸€äº›æ–¹æ³•ï¼Œå¹¶ä¸ºæ“ä½œæ—¥å†å­—æ®µæä¾›äº†ä¸€äº›æ–¹æ³•
+    Calendar ÎªÌØ¶¨Ë²¼äÓëÒ»×éÈÕÀú×Ö¶Î¡¾Äê ÔÂ ÈÕ Ê±¡¿Ö®¼äµÄ×ª»»Ìá¹©ÁËÒ»Ğ©·½·¨£¬
+             ²¢Îª²Ù×÷ÈÕÀú×Ö¶Î¡¾Äê ÔÂ ÈÕ Ê±¡¿Ìá¹©ÁËÒ»Ğ©·½·¨
+             ×¢£ºËùÎ½µÄÈÕÀú×Ö¶Î£¬¾ÍÊÇCalendarÀàµÄ³ÉÔ±ÊôĞÔ£¬ÇÒ¶¼±»StaticĞŞÊÎ£¬¿ÉÊ¹ÓÃÀàÃûÖ±½Óµ÷ÓÃ
 
-    Calendar æä¾›äº†ä¸€ä¸ªç±»æ–¹æ³• getInstance ç”¨äºè·å–è¿™ç§ç±»å‹çš„ä¸€èˆ¬æœ‰ç”¨çš„å¯¹è±¡ï¼Œè¯¥æ–¹æ³•è¿”å›ä¸€ä¸ª Calendar å¯¹è±¡ï¼Œ
-    å…¶æ—¥å†å­—æ®µå·²ä½¿ç”¨å½“å‰æ—¥æœŸå’Œæ—¶é—´åˆå§‹åŒ–ï¼šCalendar rightNow = Calendar.getInstance();
+    Calendar Ìá¹©ÁËÒ»¸öÀà·½·¨ getInstance ÓÃÓÚ»ñÈ¡ÕâÖÖÀàĞÍµÄÒ»°ãÓĞÓÃµÄ¶ÔÏó£¬¸Ã·½·¨·µ»ØÒ»¸ö Calendar ¶ÔÏó£¬
+    ÆäÈÕÀú×Ö¶ÎÒÑÊ¹ÓÃ¡¾µ±Ç°ÈÕÆÚºÍÊ±¼ä¡¿³õÊ¼»¯£ºCalendar rightNow = Calendar.getInstance();
+
+    ×¢£ºÓÉÓÚCalendarÀàÊÇ³éÏóÀà£¬ËùÒÔÒªÊ¹ÓÃÆä·½·¨£¬ÓĞÁ½ÖÖ·½Ê½£º
+    £¨1£©Ê¹ÓÃCalendarÀà·½·¨·µ»ØµÄ¶ÔÏó£ºgetInstance()
+    £¨2£©ÀûÓÃ¶àÌ¬ĞÍ£¬Ê¹ÓÃÆä×ÓÀà¶ÔÏóGregorianCalendarµ÷ÓÃCalendar
+    £¨3£©Èç¹û³ıÁËÏëÒªÓÅ»¯ÈÕÆÚµÄÏÔÊ¾¸ñÊ½Íâ£¬»¹Ïë¶ÔÈÕÆÚµÄ×Ö¶Î¡¾ÄêÔÂÈÕ¡¿×ö´¦Àí¡¾¼Ó¼õ¡¿£¬ÄÇÃ´Ñ¡Calendar
  */
+
 public class CalendarDemo {
     public static void main(String[] args) {
-        //æ—¥å†å­—æ®µå·²ä½¿ç”¨å½“å‰æ—¥æœŸå’Œæ—¶é—´åˆå§‹åŒ–
-        Calendar c = Calendar.getInstance();
+        //ÈÕÀú×Ö¶ÎÒÑÊ¹ÓÃµ±Ç°ÈÕÆÚºÍÊ±¼ä³õÊ¼»¯
+        Calendar c = Calendar.getInstance();//¶àÌ¬µÄĞÎÊ½»ñÈ¡×ÓÀà¶ÔÏó
 
-//        System.out.println(c);
+        System.out.println(c);//²é¿´Calendar¶ÔÏóµÄ×Ö·û´®±íÏÖĞÎÊ½£¬°üº¬ÁËËùÓĞµÄÈÕÀú×Ö¶Î
 
-        //public int getâ€‹(int field)
+        //public int get(int field)
         int year = c.get(Calendar.YEAR);
-        int month = c.get(Calendar.MONTH);
+        int month = c.get(Calendar.MONTH);//´Ó0¿ªÊ¼µ½11
         int date = c.get(Calendar.DATE);
 
-        System.out.println(year + "å¹´" + (month + 1) + "æœˆ" + date + "æ—¥");
+        System.out.println(year + "Äê" + (month + 1) + "ÔÂ" + date + "ÈÕ");
 
     }
 }

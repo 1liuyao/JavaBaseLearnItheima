@@ -3,23 +3,24 @@ package com.itheima;
 import java.util.Date;
 
 /*
-    public long getTime():è·å–çš„æ˜¯æ—¥æœŸå¯¹è±¡ä»1970å¹´1æœˆ1æ—¥ 00:00:00åˆ°ç°åœ¨çš„æ¯«ç§’å€¼
-    public void setTime(long time):è®¾ç½®æ—¶é—´ï¼Œç»™çš„æ˜¯æ¯«ç§’å€¼
+    public long getTime():»ñÈ¡µÄÊÇÈÕÆÚ¶ÔÏó´Ó1970Äê1ÔÂ1ÈÕ 00:00:00µ½ÏÖÔÚµÄºÁÃëÖµ
+    public void setTime(long time):ÉèÖÃÊ±¼ä£¬¸øµÄÊÇºÁÃëÖµ
  */
 public class DateDemo02 {
     public static void main(String[] args) {
-        //åˆ›å»ºæ—¥æœŸå¯¹è±¡
+        //´´½¨ÈÕÆÚ¶ÔÏó
         Date d = new Date();
 
-        //public long getTime():è·å–çš„æ˜¯æ—¥æœŸå¯¹è±¡ä»1970å¹´1æœˆ1æ—¥ 00:00:00åˆ°ç°åœ¨çš„æ¯«ç§’å€¼
-//        System.out.println(d.getTime());
-//        System.out.println(d.getTime() * 1.0 / 1000 / 60 / 60 / 24 / 365 + "å¹´");
+        //public long getTime():»ñÈ¡µÄÊÇÈÕÆÚ¶ÔÏó´Ó1970Äê1ÔÂ1ÈÕ 00:00:00µ½ÏÖÔÚµÄºÁÃëÖµ
+        System.out.println(d.getTime());
+ //       System.out.println(d.getTime() * 1.0 / 1000 / 60 / 60 / 24 / 365 + "Äê");
 
-        //public void setTime(long time):è®¾ç½®æ—¶é—´ï¼Œç»™çš„æ˜¯æ¯«ç§’å€¼
-//        long time = 1000*60*60;
-        long time = System.currentTimeMillis();
+        //public void setTime(long time):ÉèÖÃÊ±¼ä£¬¸øµÄÊÇºÁÃëÖµ
+        long time = 1000*60*60;
+//        long time = System.currentTimeMillis();
         d.setTime(time);
-
+        System.out.println(d.getTime());
+        System.out.println(time);
         System.out.println(d);
     }
 }

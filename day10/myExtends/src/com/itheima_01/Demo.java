@@ -12,5 +12,6 @@ public class Demo {
         Zi z = new Zi();
         z.method();
         z.show();//子类可以调用父类方法
+
     }
 }

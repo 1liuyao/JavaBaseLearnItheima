@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
-    工具类
+    日期工具类
 
     构造方法私有
     成员方法静态
