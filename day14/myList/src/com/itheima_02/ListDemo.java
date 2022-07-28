@@ -38,7 +38,7 @@ public class ListDemo {
         }
         System.out.println("--------");
 
-        //for循环方式
+        //for循环方式，因为有索引存在
         for(int i=0; i<list.size(); i++) {
             Student s = list.get(i);
             System.out.println(s.getName() + "," + s.getAge());

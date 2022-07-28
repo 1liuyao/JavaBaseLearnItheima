@@ -4,8 +4,8 @@ import java.util.LinkedList;
 
 /*
     LinkedList集合的特有功能：
-        public void addFirst(E e)：在该列表开头插入指定的元素
-        public void addLast(E e)：将指定的元素追加到此列表的末尾
+        public void addFirst(E e)：在该列表开头插入指定的元素【头插】
+        public void addLast(E e)：将指定的元素追加到此列表的末尾【尾插】
 
         public E getFirst()：返回此列表中的第一个元素
         public E getLast()：返回此列表中的最后一个元素

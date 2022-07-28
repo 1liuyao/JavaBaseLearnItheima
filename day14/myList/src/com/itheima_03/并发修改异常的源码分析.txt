@@ -9,13 +9,13 @@ public abstract class AbstractList<E> {
 
 public class ArrayList<E> extends AbstractList<E> implements List<E> {
 
-    public E get(int index) {
+    public E get(int index) {//get方法没有对modCount做操作，所以不会抛异常
         Objects.checkIndex(index, size);
         return elementData(index);
     }
 
     public boolean add(E e) {
-        modCount++;
+        modCount++;         //当List引用在迭代器遍历过程中调用了add方法，modCount会++，导致modCount != expectedModCount
         add(e, elementData, size);
         return true;
     }
@@ -44,7 +44,7 @@ public class ArrayList<E> extends AbstractList<E> implements List<E> {
         }
 
         final void checkForComodification() {
-            if (modCount != expectedModCount)
+            if (modCount != expectedModCount)//实际需改次数和预期修改次数不同，导致抛并发修改异常
                 throw new ConcurrentModificationException();
         }
     }

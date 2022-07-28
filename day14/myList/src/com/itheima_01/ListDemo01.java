@@ -6,8 +6,8 @@ import java.util.List;
 
 /*
     List集合特点
-        有序：存储和取出的元素顺序一致
-        可重复：存储的元素可以重复
+        （1）有序：存储和取出的元素顺序一致
+        （2）可重复：存储的元素可以重复，因为有索引index标记元素
  */
 public class ListDemo01 {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class ListDemo01 {
         list.add("hello");
         list.add("world");
         list.add("java");
-        list.add("world");
+        list.add("world");//存入重复元素
 
         //输出集合对象
 //        System.out.println(list);

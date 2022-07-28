@@ -2,29 +2,30 @@ package com.itheima_07;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 /*
-    Listé›†åˆå¸¸ç”¨å­ç±»ï¼šArrayListï¼ŒLinkedList
-        ArrayListï¼šåº•å±‚æ•°æ®ç»“æ„æ˜¯æ•°ç»„ï¼ŒæŸ¥è¯¢å¿«ï¼Œå¢åˆ æ…¢
-        LinkedListï¼šåº•å±‚æ•°æ®ç»“æ„æ˜¯é“¾è¡¨ï¼ŒæŸ¥è¯¢æ…¢ï¼Œå¢åˆ å¿«
+    List¼¯ºÏ³£ÓÃ×ÓÀà£ºArrayList£¬LinkedList
+        ArrayList£ºµ×²ãÊı¾İ½á¹¹ÊÇÊı×é£¬²éÑ¯¿ì£¬ÔöÉ¾Âı
+        LinkedList£ºµ×²ãÊı¾İ½á¹¹ÊÇÁ´±í£¬²éÑ¯Âı£¬ÔöÉ¾¿ì
 
-    ç»ƒä¹ ï¼š
-        åˆ†åˆ«ä½¿ç”¨ArrayListå’ŒLinkedListå®Œæˆå­˜å‚¨å­—ç¬¦ä¸²å¹¶éå†
+    Á·Ï°£º
+        ·Ö±ğÊ¹ÓÃArrayListºÍLinkedListÍê³É´æ´¢×Ö·û´®²¢±éÀú
  */
 public class ListDemo {
     public static void main(String[] args) {
-        //åˆ›å»ºé›†åˆå¯¹è±¡
+        //´´½¨¼¯ºÏ¶ÔÏó
         ArrayList<String> array = new ArrayList<String>();
 
         array.add("hello");
         array.add("world");
         array.add("java");
 
-        //éå†
+        //±éÀú
         for (String s : array) {
             System.out.println(s);
         }
-        //å‰©ä¸‹ä¸¤ç§éå†æ–¹å¼å¤§å®¶è¡¥é½
+        //Ê£ÏÂÁ½ÖÖ±éÀú·½Ê½´ó¼Ò²¹Æë
         System.out.println("--------");
 
         LinkedList<String> linkedList = new LinkedList<String>();
@@ -36,6 +37,20 @@ public class ListDemo {
         for(String s : linkedList) {
             System.out.println(s);
         }
-        //å‰©ä¸‹ä¸¤ç§éå†æ–¹å¼å¤§å®¶è¡¥é½
+        //Ê£ÏÂÁ½ÖÖ±éÀú·½Ê½´ó¼Ò²¹Æë
+
+        System.out.println("·½Ê½¶ş£º");
+        for (int i=0;i<linkedList.size();i++){
+            String s=linkedList.get(i);
+            System.out.println(s);
+        }
+
+        System.out.println("·½Ê½Èı£º");
+        ListIterator<String> listIterator = linkedList.listIterator();
+        while(listIterator.hasNext()){
+            String s=listIterator.next();
+            System.out.println(s);
+        }
+
     }
 }

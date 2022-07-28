@@ -20,7 +20,7 @@ import java.util.Iterator;
 public class ArrayListDemo {
     public static void main(String[] args) {
         //创建ArrayList集合对象
-        ArrayList<Student> array = new ArrayList<Student>();
+        ArrayList<Student> array = new ArrayList<Student>();//此处不使用多态，直接声明ArrayList的引用
 
         //创建学生对象
         Student s1 = new Student("林青霞", 30);

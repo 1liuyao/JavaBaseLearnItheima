@@ -16,9 +16,9 @@ import java.util.Collection;
     （4）获取操作：①获取集合的长度，也就是集合中元素的个数：int size()
                 ②获取集合中所有元素，也就是遍历集合：Iterator<E> iterator()
     （5）取交集：对当前集合保留与指定集合中的相同元素。
-              如果两个集合相同，返回true，代表当前集合不需要修改；
-              否则返回false，当前集合删除了与给定集合不相同的元素，表示当前集合被修改。
-              boolean retainAll(Collection<?> c)
+               如果两个集合相同，返回true，代表当前集合不需要修改；
+               否则返回false，当前集合删除了与给定集合不相同的元素，表示当前集合被修改。
+               boolean retainAll(Collection<?> c)
     （6）将集合变数组：toArray()
 
     Alt+7   打开一个窗口，能够看到类的所有信息

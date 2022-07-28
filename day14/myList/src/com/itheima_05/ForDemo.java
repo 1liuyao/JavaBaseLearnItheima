@@ -6,7 +6,7 @@ import java.util.List;
 /*
     增强for：简化数组和Collection集合的遍历
         实现Iterable接口的类允许其对象成为增强型 for语句的目标
-        它是JDK5之后出现的，其内部原理是一个Iterator迭代器
+        它是JDK5之后出现的，其内部原理是一个Iterator迭代器，所以最好在遍历的时候不要做修改操作
 
     格式：
         for(元素数据类型 变量名 : 数组或者Collection集合) {
@@ -18,6 +18,7 @@ public class ForDemo {
         int[] arr = {1,2,3,4,5};
         for(int i : arr) {
             System.out.println(i);
+            i=100;//此操作，改变不了数组的值
         }
         System.out.println("--------");
 
@@ -34,16 +35,18 @@ public class ForDemo {
 
         for(String s : list) {
             System.out.println(s);
+            s="abc";//此操作，改变不了数组的值
         }
         System.out.println("--------");
 
         //内部原理是一个Iterator迭代器
-        /*
-        for(String s : list) {
-            if(s.equals("world")) {
-                list.add("javaee"); //ConcurrentModificationException
-            }
-        }
-        */
+
+//        for(String s : list) {//说明本质还是一个Iterator
+//            if(s.equals("world")) {
+//                list.add("javaee"); //ConcurrentModificationException
+//            }
+//        }
+
+
     }
 }
