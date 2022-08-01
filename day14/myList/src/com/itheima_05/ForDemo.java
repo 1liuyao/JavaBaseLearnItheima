@@ -12,6 +12,10 @@ import java.util.List;
         for(元素数据类型 变量名 : 数组或者Collection集合) {
             //在此处使用变量即可，该变量就是元素
         }
+
+    注意事项：
+    （1）在遍历集合时，不能对集合进行增删改
+    （2）使用增强for时，不能对元素进行赋值
  */
 public class ForDemo {
     public static void main(String[] args) {
