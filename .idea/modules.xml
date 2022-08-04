@@ -6,8 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/day11/myAbstract/myAbstract.iml" filepath="$PROJECT_DIR$/day11/myAbstract/myAbstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/day12/myArgs/myArgs.iml" filepath="$PROJECT_DIR$/day12/myArgs/myArgs.iml" />
       <module fileurl="file://$PROJECT_DIR$/day12/myArrays/myArrays.iml" filepath="$PROJECT_DIR$/day12/myArrays/myArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day18/myByteBufferedStream/myByteBufferedStream.iml" filepath="$PROJECT_DIR$/day18/myByteBufferedStream/myByteBufferedStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/day17/myByteStream/myByteStream.iml" filepath="$PROJECT_DIR$/day17/myByteStream/myByteStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/day13/myCalendar/myCalendar.iml" filepath="$PROJECT_DIR$/day13/myCalendar/myCalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day18/myCharStream/myCharStream.iml" filepath="$PROJECT_DIR$/day18/myCharStream/myCharStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/day14/myCollection/myCollection.iml" filepath="$PROJECT_DIR$/day14/myCollection/myCollection.iml" />
       <module fileurl="file://$PROJECT_DIR$/day16/myCollections/myCollections.iml" filepath="$PROJECT_DIR$/day16/myCollections/myCollections.iml" />
       <module fileurl="file://$PROJECT_DIR$/day13/myDate/myDate.iml" filepath="$PROJECT_DIR$/day13/myDate/myDate.iml" />

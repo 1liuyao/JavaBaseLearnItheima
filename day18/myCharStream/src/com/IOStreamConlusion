@@ -1,0 +1,84 @@
+IO流读写操作总结
+
+（1）字节流继承体系：【父类是abstract】
+    字节输入流：
+    InputStream--|FileInputStream（※）
+               --|FilterInputStream
+                 --|BufferedInputStream（※）
+               --|ObjectInputStream【序列持久化相关】
+               --|SequenceInputStream【多个源合成一个源】
+               --|PipedInputStream【管道流用于链接输入和输出流（线程并发操作）】
+
+    字节输出流：【根据输出目的不同，分成不同的流对象，具备父类共性读写功能，同时初始化流对象时增加了子类相关引用，
+              例如File相关，可以传入File对象初始化FileInputStream】
+    OutputStream--|FileOutputStream（※）
+                --|FilterOutputStream
+                  --|BufferedOutputStream（※）
+                  --|PrintStream【操作硬件设备（屏幕）】
+                  --|DataOutputStream【操作基本数据类型】
+                --|ObjectOutputStream
+                --|PipedInputStream【管道流用于链接输入和输出流（线程并发操作）】
+
+（2）读写操作
+    ①读一个字节写一个字节：
+    int by;
+    while ((by=fis.read())!=-1) {
+           fos.write(by);
+    }
+
+    ②读一个字节数组写一个数组
+    byte[] bys = new byte[1024];
+    int len;
+    while ((len=fis.read(bys))!=-1) {
+           os.write(bys,0,len);
+    }
+
+    ③为了提高读写效率，可以采用缓冲区装饰类，读写操作如上不变
+    字节缓冲输出流：BufferedOutputStream(OutputStream out)
+    字节缓冲输入流：BufferedInputStream(InputStream in)
+
+（3）字符流继承体系：【父类是abstract】
+    字符输入流：
+    Reader--|BufferedReader
+            --|LineNumberReader【对行号进行操作，getLineNumber()和setLineNumber(int lineNumber)】
+          --|InputStreamReader【字节流通向字符流，字节流+编码表，需要指定编码规则时使用】
+            --|FileReader
+          --|CharArrayReader
+          --|StringReader
+
+    字符输出流：
+    Writer--|BufferedWriter
+          --|OutputStreamWriter【字符流转向字节流，字节流+编码表，需要指定编码规则时使用】
+            --|FileWriter
+          --|PrintWriter
+          --|CharArrayWriter
+          --|StringWriter
+
+（4）字符流读写操作：
+    ①写char的三种方法：
+        void write(int c)：写一个字符
+            void write(char[] cbuf)：写入一个字符数组
+            void write(char[] cbuf, int off, int len)：写入字符数组的一部分
+    ②写String的两种方法：
+        void write(String str)：写一个字符串
+        void write(String str, int off, int len)：写一个字符串的一部分
+
+    ③读操作方法：【与字节流相同】
+    int read()：一次读一个字符数据
+    int read(char[] cbuf)：一次读一个字符数组数据
+
+    ④普通读写操作与字节流相同，只不过写数组时写入的是char[]
+    ⑤一般情况下使用缓冲区，采用读一行写一行的方式
+    String line;
+    while ((line=br.readLine())!=null) {
+         bw.write(line);
+         bw.newLine();
+         bw.flush();
+    }
+
+（5）关闭流和刷新流操作
+    ①字节流不需要刷新操作，字符流需要
+    ②无论字符流还是字节流，读写操作完成，需要关闭流
+    ③如果源是内存，汇也是内存，则不需要关闭流；例如：关闭一个ByteArrayInputStream没有任何效果
+
+
