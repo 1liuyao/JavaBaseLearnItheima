@@ -1,20 +1,22 @@
 package com.itheima_06;
 
-//å®šä¹‰ä¸€ä¸ªç±»SellTicketå®ç°Runnableæ¥å£ï¼Œé‡Œé¢å®šä¹‰ä¸€ä¸ªæˆå‘˜å˜é‡ï¼šprivate int tickets = 100;
+//¶¨ÒåÒ»¸öÀàSellTicketÊµÏÖRunnable½Ó¿Ú£¬ÀïÃæ¶¨ÒåÒ»¸ö³ÉÔ±±äÁ¿£ºprivate int tickets = 100;
 public class SellTicket implements Runnable {
-    private int tickets = 100;
+    private int tickets = 100;//²ÉÓÃÊµÏÖRunnableµÄ·½Ê½£¬¶àÏß³Ì½«¹²Ïítickets£¬ÒòÎªÏß³Ì²Ù×÷µÄÊÇÒ»¸ö¶ÔÏó
+                        // Èç¹û²ÉÓÃ¼Ì³ĞThread·½Ê½£¬ÔòÃ¿´´½¨Ò»´Î×ÓÀà¶ÔÏóÆô¶¯Ïß³Ì£¬¾Í»áÔÚ¶ÑÄÚ´æÖĞ²úÉúÒ»¸öticket
+                        //ÎŞ·¨ÊµÏÖ¶à¸öÏß³Ì¹²ÏíÒ»¸ö×ÊÔ´¡£
 
-    //åœ¨SellTicketç±»ä¸­é‡å†™run()æ–¹æ³•å®ç°å–ç¥¨ï¼Œä»£ç æ­¥éª¤å¦‚ä¸‹
+    //ÔÚSellTicketÀàÖĞÖØĞ´run()·½·¨ÊµÏÖÂôÆ±£¬´úÂë²½ÖèÈçÏÂ
 
     @Override
     public void run() {
-//        A:åˆ¤æ–­ç¥¨æ•°å¤§äº0ï¼Œå°±å–ç¥¨ï¼Œå¹¶å‘ŠçŸ¥æ˜¯å“ªä¸ªçª—å£å–çš„
-//        B:å–äº†ç¥¨ä¹‹åï¼Œæ€»ç¥¨æ•°è¦å‡1
-//        C:ç¥¨æ²¡æœ‰äº†ï¼Œä¹Ÿå¯èƒ½æœ‰äººæ¥é—®ï¼Œæ‰€ä»¥è¿™é‡Œç”¨æ­»å¾ªç¯è®©å–ç¥¨çš„åŠ¨ä½œä¸€ç›´æ‰§è¡Œ
+//        A:ÅĞ¶ÏÆ±Êı´óÓÚ0£¬¾ÍÂôÆ±£¬²¢¸æÖªÊÇÄÄ¸ö´°¿ÚÂôµÄ
+//        B:ÂôÁËÆ±Ö®ºó£¬×ÜÆ±ÊıÒª¼õ1
+//        C:Æ±Ã»ÓĞÁË£¬Ò²¿ÉÄÜÓĞÈËÀ´ÎÊ£¬ËùÒÔÕâÀïÓÃËÀÑ­»·ÈÃÂôÆ±µÄ¶¯×÷Ò»Ö±Ö´ĞĞ
 
         while (true) {
             if (tickets > 0) {
-                System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬" + tickets + "å¼ ç¥¨");
+                System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ" + tickets + "ÕÅÆ±");
                 tickets--;
             }
         }

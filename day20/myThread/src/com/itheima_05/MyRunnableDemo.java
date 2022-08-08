@@ -1,35 +1,35 @@
 package com.itheima_05;
 /*
-    æ–¹å¼2ï¼šå®ç°Runnableæ¥å£
-        1:å®šä¹‰ä¸€ä¸ªç±»MyRunnableå®ç°Runnableæ¥å£
-        2:åœ¨MyRunnableç±»ä¸­é‡å†™run()æ–¹æ³•
-        3:åˆ›å»ºMyRunnableç±»çš„å¯¹è±¡
-        4:åˆ›å»ºThreadç±»çš„å¯¹è±¡ï¼ŒæŠŠMyRunnableå¯¹è±¡ä½œä¸ºæ„é€ æ–¹æ³•çš„å‚æ•°
-        5:å¯åŠ¨çº¿ç¨‹
+    ·½Ê½2£ºÊµÏÖRunnable½Ó¿Ú
+        1:¶¨ÒåÒ»¸öÀàMyRunnableÊµÏÖRunnable½Ó¿Ú
+        2:ÔÚMyRunnableÀàÖĞÖØĞ´run()·½·¨
+        3:´´½¨MyRunnableÀàµÄ¶ÔÏó
+        4:´´½¨ThreadÀàµÄ¶ÔÏó£¬°ÑMyRunnable¶ÔÏó×÷Îª¹¹Ôì·½·¨µÄ²ÎÊı
+        5:Æô¶¯Ïß³Ì
 
-    å¤šçº¿ç¨‹çš„å®ç°æ–¹æ¡ˆæœ‰ä¸¤ç§ï¼š
-    ï¼ˆ1ï¼‰ç»§æ‰¿Threadç±»
-    ï¼ˆ2ï¼‰å®ç°Runnableæ¥å£
+    ¶àÏß³ÌµÄÊµÏÖ·½°¸ÓĞÁ½ÖÖ£º
+    £¨1£©¼Ì³ĞThreadÀà
+    £¨2£©ÊµÏÖRunnable½Ó¿Ú
 
-    ç›¸æ¯”ç»§æ‰¿Threadç±»ï¼Œå®ç°Runnableæ¥å£çš„å¥½å¤„
-    ï¼ˆ1ï¼‰é¿å…äº†Javaå•ç»§æ‰¿çš„å±€é™æ€§
-    ï¼ˆ2ï¼‰é€‚åˆå¤šä¸ªç›¸åŒç¨‹åºçš„ä»£ç å»å¤„ç†åŒä¸€ä¸ªèµ„æºã€runæ–¹æ³•ä¸­å°è£…çš„å†…å®¹ã€‘çš„æƒ…å†µï¼ŒæŠŠçº¿ç¨‹å’Œç¨‹åºçš„ä»£ç ã€æ•°æ®æœ‰æ•ˆåˆ†ç¦»ï¼Œè¾ƒå¥½çš„ä½“ç°äº†é¢å‘å¯¹è±¡çš„è®¾è®¡æ€æƒ³
+    Ïà±È¼Ì³ĞThreadÀà£¬ÊµÏÖRunnable½Ó¿ÚµÄºÃ´¦
+    £¨1£©±ÜÃâÁËJavaµ¥¼Ì³ĞµÄ¾ÖÏŞĞÔ
+    £¨2£©ÊÊºÏ¶à¸öÏàÍ¬³ÌĞòµÄ´úÂëÈ¥´¦ÀíÍ¬Ò»¸ö×ÊÔ´¡¾run·½·¨ÖĞ·â×°µÄÄÚÈİ¡¿µÄÇé¿ö£¬°ÑÏß³ÌºÍ³ÌĞòµÄ´úÂë¡¢Êı¾İÓĞĞ§·ÖÀë£¬½ÏºÃµÄÌåÏÖÁËÃæÏò¶ÔÏóµÄÉè¼ÆË¼Ïë
  */
 public class MyRunnableDemo {
     public static void main(String[] args) {
-        //åˆ›å»ºMyRunnableç±»çš„å¯¹è±¡
+        //´´½¨MyRunnableÀàµÄ¶ÔÏó
         MyRunnable my = new MyRunnable();
 
-        //åˆ›å»ºThreadç±»çš„å¯¹è±¡ï¼ŒæŠŠMyRunnableå¯¹è±¡ä½œä¸ºæ„é€ æ–¹æ³•çš„å‚æ•°
+        //´´½¨ThreadÀàµÄ¶ÔÏó£¬°ÑMyRunnable¶ÔÏó×÷Îª¹¹Ôì·½·¨µÄ²ÎÊı
         //Thread(Runnable target)
 //        Thread t1 = new Thread(my);
 //        Thread t2 = new Thread(my);
 
         //Thread(Runnable target, String name)
-        Thread t1 = new Thread(my,"é«˜é“");
-        Thread t2 = new Thread(my,"é£æœº");
+        Thread t1 = new Thread(my,"¸ßÌú");
+        Thread t2 = new Thread(my,"·É»ú");
 
-        //å¯åŠ¨çº¿ç¨‹
+        //Æô¶¯Ïß³Ì
         t1.start();
         t2.start();
     }

@@ -7,7 +7,8 @@ package com.itheima_09;
         方法体；
     }
 
-    同步方法的锁对象是什么呢?this
+    同步方法的锁对象是什么呢?
+    this
 
     静态同步方法
     同步静态方法：就是把synchronized关键字加到静态方法上
@@ -15,7 +16,8 @@ package com.itheima_09;
         方法体；
     }
 
-    同步静态方法的锁对象是什么呢?类名.class
+    同步静态方法的锁对象是什么呢?
+    类名.class
  */
 public class SellTicket implements Runnable {
 //    private int tickets = 100;

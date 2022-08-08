@@ -20,6 +20,13 @@ import java.util.Date;
          （4）如果多个catch块中的异常存在继承关系，父类异常catch块放在最下面，所以catch（Exception e）应该放在最下面。
          （5）建议在进行catch处理时，catch中一定要定义具体的处理方式，不要简单定义一句a.printStackTrace(),也不要简单的就书写一条输出语句
              可以记录到日志文件中。
+
+    继承体系中抛出异常的规则：
+    在java中重写了某方法后，该方法可以抛出的异常有:
+    （1）不抛出任何异常
+    （2）仅抛出父类方法的的部分异常
+    （3）抛出父类方法抛出异常的子类型异常
+    （4）可以抛出与父类方法完全相同的异常
  */
 public class ExceptionDemo {
     public static void main(String[] args) {
