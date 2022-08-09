@@ -14,7 +14,7 @@ IO流读写操作总结
     OutputStream--|FileOutputStream（※）
                 --|FilterOutputStream
                   --|BufferedOutputStream（※）
-                  --|PrintStream【操作硬件设备（屏幕）】
+                  --|PrintStream【操作硬件设备（屏幕）】【具备特有输出方法println】
                   --|DataOutputStream【操作基本数据类型】
                 --|ObjectOutputStream
                 --|PipedInputStream【管道流用于链接输入和输出流（线程并发操作）】
@@ -39,7 +39,7 @@ IO流读写操作总结
 
 （3）字符流继承体系：【父类是abstract】
     字符输入流：
-    Reader--|BufferedReader
+    Reader--|BufferedReader【除了具备Reader父类的读方式，还具备特有读方式readLine()】
             --|LineNumberReader【对行号进行操作，getLineNumber()和setLineNumber(int lineNumber)】
           --|InputStreamReader【字节流通向字符流，字节流+编码表，需要指定编码规则时使用】
             --|FileReader
@@ -50,7 +50,7 @@ IO流读写操作总结
     Writer--|BufferedWriter
           --|OutputStreamWriter【字符流转向字节流，字节流+编码表，需要指定编码规则时使用】
             --|FileWriter
-          --|PrintWriter
+          --|PrintWriter【初始化时可设定自动刷新】【具备特有写方法println】
           --|CharArrayWriter
           --|StringWriter
 
@@ -80,5 +80,29 @@ IO流读写操作总结
     ①字节流不需要刷新操作，字符流需要
     ②无论字符流还是字节流，读写操作完成，需要关闭流
     ③如果源是内存，汇也是内存，则不需要关闭流；例如：关闭一个ByteArrayInputStream没有任何效果
+
+
+（6）数据源和数据汇IO对象选择
+    ①数据源：文件：【字节文件】new BufferedInputStream(new FileInputStream(String path))
+                 【字符文件】new BufferedRead(new FileReader(String path))
+                           new BufferedRead(new InputStreamReader(InputStream inStream))
+            内存：【集合】【Map】new Properties.load(InputStream in)
+                       【ArrayList】获取集合中对象-->使用集合方法获取对象成员属性-->拼接成字符串【StringBuilder】-->准备写入文件【一般写入字符文件】
+                       【Set】同ArrayList
+                 【数组】new CharArrayReader(char[] buf)
+                 【字符串】new StringReader(String s)
+            键盘：System.in
+            TCP Server：new ServerSocket(port).accept().getInputStream()
+
+    ②数据汇：文件：【字节文件】new BufferedOutputStream(new FileOutputStream(String path))
+                 【字符文件】new BufferedWriter(new FileWriter(String path))
+                           new BufferedWriter(new InputStreamWriter(OutputStream outStream))
+            内存：【集合】【Map】new Properties.store(OutputStream out)
+                       【ArrayList】读取文件【通常为字符文件】-->按行读取字符串-->切割字符串new String().split(String regex)-->使用集合方法写入
+                       【Set】同ArrayList
+                 【数组】CharArrayWriter
+                 【字符串】StringWriter
+            控制台：System.out【本质是PrintStream流】
+            TCP Client：new Socket(ip,port).getOutputStream()
 
 
