@@ -12,6 +12,16 @@ import java.net.SocketException;
         3:调用DatagramSocket对象的方法接收数据
         4:解析数据包，并把数据在控制台显示
         5:关闭接收端
+
+        DatagramSocket():创建数据报套接字并将其绑定到本机地址上的任何可用端口
+        DatagramPacket(byte[] buf,int len,InetAddress add,int port):创建数据包,发送长度为len的数据包到指定主机的指定端口
+        DatagramPacket(byte[] buf,int len):创建一个DatagramPacket用于接收长度为len的数据包
+        byte[] getData() 返回数据缓冲区,DatagramPacket中封装多大的数组就返回多大的
+        int getLength() 返回要发送的数据的长度或接收的数据的长度
+
+        void send(DatagramPacket p) 发送数据报包
+        void receive(DatagramPacket p) 从此套接字接受数据报包
+        void close() 关闭数据报套接字
  */
 public class ReceiveDemo {
     public static void main(String[] args) throws IOException {

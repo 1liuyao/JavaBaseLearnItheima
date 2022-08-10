@@ -13,6 +13,15 @@ import java.net.Socket;
         1:创建服务器端的Socket对象(ServerSocket)
         2:获取输入流，读数据，并把数据显示在控制台
         3:释放资源
+
+    Socket(InetAddress address,int port) 创建流套接字并将其连接到指定IP指定端口号
+    Socket(String host, int port) 创建流套接字并将其连接到指定主机上的指定端口号
+
+    InputStream getInputStream() 返回此套接字的输入流
+    OutputStream getOutputStream() 返回此套接字的输出流
+
+    ServerSocket(int port)：返回服务器对象
+    Socket accept()：服务器端监听到的客户端对象
  */
 public class ServerDemo {
     public static void main(String[] args) throws IOException {
