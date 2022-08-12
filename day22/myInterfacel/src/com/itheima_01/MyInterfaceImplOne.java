@@ -10,7 +10,7 @@ public class MyInterfaceImplOne implements MyInterface {
     public void show2() {
         System.out.println("One show2");
     }
-    //重写接口中的default方法，需去掉default关键字
+    //??д????е?default???????????default?????
     @Override
     public void show3() {
         System.out.println("One show3");

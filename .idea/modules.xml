@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/day10/myExtends/myExtends.iml" filepath="$PROJECT_DIR$/day10/myExtends/myExtends.iml" />
       <module fileurl="file://$PROJECT_DIR$/day17/myFile/myFile.iml" filepath="$PROJECT_DIR$/day17/myFile/myFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/day10/myFinal/myFinal.iml" filepath="$PROJECT_DIR$/day10/myFinal/myFinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day23/myFunctionInterface/myFunctionInterface.iml" filepath="$PROJECT_DIR$/day23/myFunctionInterface/myFunctionInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/day15/myGeneric/myGeneric.iml" filepath="$PROJECT_DIR$/day15/myGeneric/myGeneric.iml" />
       <module fileurl="file://$PROJECT_DIR$/day10/myImport/myImport.iml" filepath="$PROJECT_DIR$/day10/myImport/myImport.iml" />
       <module fileurl="file://$PROJECT_DIR$/day12/myInnerClass/myInnerClass.iml" filepath="$PROJECT_DIR$/day12/myInnerClass/myInnerClass.iml" />
@@ -37,6 +38,7 @@
       <module fileurl="file://$PROJECT_DIR$/day15/mySet/mySet.iml" filepath="$PROJECT_DIR$/day15/mySet/mySet.iml" />
       <module fileurl="file://$PROJECT_DIR$/day13/mySimpleDateFormat/mySimpleDateFormat.iml" filepath="$PROJECT_DIR$/day13/mySimpleDateFormat/mySimpleDateFormat.iml" />
       <module fileurl="file://$PROJECT_DIR$/day10/myStatic/myStatic.iml" filepath="$PROJECT_DIR$/day10/myStatic/myStatic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day23/myStream/myStream.iml" filepath="$PROJECT_DIR$/day23/myStream/myStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/day12/mySystem/mySystem.iml" filepath="$PROJECT_DIR$/day12/mySystem/mySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/day20/myThread/myThread.iml" filepath="$PROJECT_DIR$/day20/myThread/myThread.iml" />
     </modules>
