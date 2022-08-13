@@ -34,13 +34,16 @@
       <module fileurl="file://$PROJECT_DIR$/day10/myModifier/myModifier.iml" filepath="$PROJECT_DIR$/day10/myModifier/myModifier.iml" />
       <module fileurl="file://$PROJECT_DIR$/day21/myNet/myNet.iml" filepath="$PROJECT_DIR$/day21/myNet/myNet.iml" />
       <module fileurl="file://$PROJECT_DIR$/day12/myObject/myObject.iml" filepath="$PROJECT_DIR$/day12/myObject/myObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day24/myOne/myOne.iml" filepath="$PROJECT_DIR$/day24/myOne/myOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/day19/myOtherStream/myOtherStream.iml" filepath="$PROJECT_DIR$/day19/myOtherStream/myOtherStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day24/myReflect/myReflect.iml" filepath="$PROJECT_DIR$/day24/myReflect/myReflect.iml" />
       <module fileurl="file://$PROJECT_DIR$/day15/mySet/mySet.iml" filepath="$PROJECT_DIR$/day15/mySet/mySet.iml" />
       <module fileurl="file://$PROJECT_DIR$/day13/mySimpleDateFormat/mySimpleDateFormat.iml" filepath="$PROJECT_DIR$/day13/mySimpleDateFormat/mySimpleDateFormat.iml" />
       <module fileurl="file://$PROJECT_DIR$/day10/myStatic/myStatic.iml" filepath="$PROJECT_DIR$/day10/myStatic/myStatic.iml" />
       <module fileurl="file://$PROJECT_DIR$/day23/myStream/myStream.iml" filepath="$PROJECT_DIR$/day23/myStream/myStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/day12/mySystem/mySystem.iml" filepath="$PROJECT_DIR$/day12/mySystem/mySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/day20/myThread/myThread.iml" filepath="$PROJECT_DIR$/day20/myThread/myThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day24/myTwo/myTwo.iml" filepath="$PROJECT_DIR$/day24/myTwo/myTwo.iml" />
     </modules>
   </component>
 </project>
