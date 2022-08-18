@@ -9,6 +9,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="demo" target="1.8" />
       <module name="myGeneric" target="11" />
     </bytecodeTargetLevel>
   </component>
