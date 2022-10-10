@@ -41,6 +41,7 @@ public class ListDemo {
 //                list.add("javaee");//List引用也在操作元素
 //            }
 //        }
+//        抛出：Exception in thread "main" java.util.ConcurrentModificationException
 
         //方式一：使用for循环根据index遍历List，只是用List引用 add方法操作数组，
         // 这种方式在集合【末尾】添加，[hello, world, java, javaee]

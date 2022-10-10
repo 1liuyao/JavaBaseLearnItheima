@@ -42,7 +42,7 @@ public class Outer {
         }.show();
         */
 
-        //重写调用父类或者接口方法，并调用多次
+        //重写调用父类或者接口方法，并调用【多次】
         Inter i = new Inter() {
             @Override
             public void show() {
